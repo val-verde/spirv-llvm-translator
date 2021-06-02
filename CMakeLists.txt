@@ -113,6 +113,7 @@ endif(NOT SPIRV_TOOLS_FOUND)
 
 add_subdirectory(lib/SPIRV)
 add_subdirectory(tools/llvm-spirv)
+add_custom_target(default ALL DEPENDS llvm-spirv)
 if(LLVM_SPIRV_INCLUDE_TESTS)
   add_subdirectory(test)
 endif(LLVM_SPIRV_INCLUDE_TESTS)

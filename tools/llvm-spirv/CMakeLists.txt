@@ -29,3 +29,7 @@ if(SPIRV_TOOLS_FOUND)
   target_include_directories(llvm-spirv PRIVATE ${SPIRV_TOOLS_INCLUDE_DIRS})
   target_link_libraries(llvm-spirv PRIVATE ${SPIRV_TOOLS_LDFLAGS})
 endif(SPIRV_TOOLS_FOUND)
+
+install(TARGETS llvm-spirv
+  RUNTIME DESTINATION bin
+)
