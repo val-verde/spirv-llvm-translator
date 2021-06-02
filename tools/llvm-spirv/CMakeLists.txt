@@ -23,3 +23,7 @@ target_include_directories(llvm-spirv
     ${LLVM_INCLUDE_DIRS}
     ${LLVM_SPIRV_INCLUDE_DIRS}
 )
+
+install(TARGETS llvm-spirv
+  RUNTIME DESTINATION bin
+)

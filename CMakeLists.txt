@@ -103,6 +103,7 @@ set(LLVM_SPIRV_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 add_subdirectory(lib/SPIRV)
 add_subdirectory(tools/llvm-spirv)
+add_custom_target(default ALL DEPENDS llvm-spirv)
 if(LLVM_SPIRV_INCLUDE_TESTS)
   add_subdirectory(test)
 endif(LLVM_SPIRV_INCLUDE_TESTS)
