@@ -45,6 +45,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
+#include "llvm/ADT/APFloat.h"
 #include "llvm/Bitcode/BitcodeReader.h"
 #include "llvm/Bitcode/BitcodeWriter.h"
 #include "llvm/IR/LLVMContext.h"
