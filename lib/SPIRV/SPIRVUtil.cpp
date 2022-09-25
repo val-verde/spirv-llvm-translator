@@ -79,7 +79,7 @@ cl::opt<bool, true> EnableDbgOutput("spirv-debug",
                                     cl::location(SPIRVDbgEnable));
 #endif
 
-bool isSupportedTriple(Triple T) { return T.isSPIR() || T.isSPIRV(); }
+bool isSupportedTriple(Triple T) { return T.isSPIR(); }
 
 void addFnAttr(CallInst *Call, Attribute::AttrKind Attr) {
   Call->addFnAttr(Attr);
